@@ -24,6 +24,7 @@ The variables provided in the dataset include:
 
 
 **Metrics Choice**
+
 I used BigQuery to run queries and generate key metrics required for this analysis.
 
 1. The variables are 
@@ -54,25 +55,26 @@ In the results shown in the table above, the retention_1 rate and retention_7 ra
 **However, this is not sufficient enough to launch the features. Further analysis needs to be conducted on the evaluation metrics to guide our actions.** 
 
 **Hypothesis**
-Null hypothesis (H0): The retention rate is the same for both groups (no difference). I.e H0 : p1​=p2​
 
-Alternative hypothesis (Ha​​): The retention rates are different between the two groups. i.e Ha: p1≠p2
+- **Null hypothesis (H0)**: The retention rate is the same for both groups (no difference). I.e H0 : p1​=p2​
+
+- **Alternative hypothesis (Ha​​)**: The retention rates are different between the two groups. i.e Ha: p1≠p2
 
 
 For my next step, I used Evan Millers’s Chi-Squared Test and the 2 Sample T-Test calculator to carry out my A/B test.
 
 ### Test 1: Evan Millers’s Chi-Squared Test
 
-**Evan Millers’s Chi-Squared Test**
 
-| Evan Miller’s Chi-Squared Test (95% CI) | p-value | Statistically significant? |
+
+|                                         | p-value | Statistically significant? |
 |-----------------------------------------|---------|----------------------------|
 | Retention_1                             | 0.074   | No                         |
 | Retention_7                             | 0.00155 | Yes                        |
 
 
 
-**Evan Millers’s 2 Sample T-Test**
+### Test 2: Evan Millers’s 2 Sample T-Test
 
 | p-value | Statistically significant? |
 |---------|----------------------------|
