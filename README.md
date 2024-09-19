@@ -118,7 +118,8 @@ Given that the retention rates after 7 days show a statistically significant imp
 Leave Gate 30 as the first gate as it shows stronger long-term player retention, which is likely to yield more sustained engagement over time.
 
 
-Note: I attached a more detailed report to this repository, or you can check it [here](https://docs.google.com/document/d/1pL8tICQDnqSXg67VhRJv5e9x0mTI0DC45bvKwSCqGsY/edit?usp=sharing).
+Note: I attached a more detailed report and the .sql file to this repository, or you can check it [here](https://docs.google.com/document/d/1pL8tICQDnqSXg67VhRJv5e9x0mTI0DC45bvKwSCqGsY/edit?usp=sharing) and [here](https://github.com/bayoxx/A-B-Testing-for-Mobile-Games---Cookie-Cats/blob/main/Cookie%20Cats%20game.sql).
 
 Task Source: Kaggle
+
 
