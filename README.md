@@ -7,7 +7,7 @@ The goal of this A/B test is to assess the impact of moving the first gate in th
 
 ### Experiment Design
 
-Contents
+**Contents**
 
 The dataset consists of data from 90,189 players who installed the game during the A/B test period. 
 Task Variables
@@ -22,8 +22,8 @@ The variables provided in the dataset include:
   
 *When a player installed the game, he or she was randomly assigned to either.*
 
-Metrics Choice
 
+**Metrics Choice**
 I used BigQuery to run queries and generate key metrics required for this analysis.
 
 1. The variables are 
@@ -53,17 +53,15 @@ In the results shown in the table above, the retention_1 rate and retention_7 ra
 
 **However, this is not sufficient enough to launch the features. Further analysis needs to be conducted on the evaluation metrics to guide our actions.** 
 
-Hypothesis
-Null hypothesis (H0): The retention rate is the same for both groups (no difference). I.e H0 ​: p1​=p2​
+**Hypothesis**
+Null hypothesis (H0): The retention rate is the same for both groups (no difference). I.e H0 : p1​=p2​
 
-Alternative hypothesis (Ha​​): The retention rates are different between the two groups. i.e Ha​ : p1≠p2
+Alternative hypothesis (Ha​​): The retention rates are different between the two groups. i.e Ha: p1≠p2
 
 
-For my next step, I used Evan Millers’s Chi-Squared Test and the 2 Sample T-Test calculator to further carry out my analysis.
+For my next step, I used Evan Millers’s Chi-Squared Test and the 2 Sample T-Test calculator to carry out my A/B test.
 
 ### Test 1: Evan Millers’s Chi-Squared Test
-
-For my next step, I used Evan Millers’s Chi-Squared Test and the 2 Sample T-Test calculator to further carry out my analysis.
 
 **Evan Millers’s Chi-Squared Test**
 
@@ -79,6 +77,7 @@ For my next step, I used Evan Millers’s Chi-Squared Test and the 2 Sample T-Te
 | p-value | Statistically significant? |
 |---------|----------------------------|
 | 0.38    | No                         |
+
 
 
 **1. Description of Statistical Tests:**
@@ -98,9 +97,9 @@ Gate 40 (Game Rounds): 1.299 ± 0.949 (0.350 to 2.248).
 These confidence intervals indicate that Gate 30 has a higher mean game round than Gate 40.
 
 **4. P-Values:**
-2-Sample T-Test: The p-value is 0.38, indicating no statistically significant difference in the mean number of game rounds between Gate 30 and Gate 40.
-Chi-Squared Test (Retention after 1 day): The p-value is 0.074, which is above the standard alpha level of 0.05. While this suggests some difference in day 1 retention between Gate 30 and Gate 40, it is not statistically significant.
-Chi-Squared Test (Retention after 7 days): The p-value is 0.0016, which is well below 0.05, indicating a statistically significant difference in retention rates after 7 days, with Gate 30 showing better long-term retention.
+- 2-Sample T-Test: The p-value is 0.38, indicating no statistically significant difference in the mean number of game rounds between Gate 30 and Gate 40.
+- Chi-Squared Test (Retention after 1 day): The p-value is 0.074, which is above the standard alpha level of 0.05. While this suggests some difference in day 1 retention between Gate 30 and Gate 40, it is not statistically significant.
+- Chi-Squared Test (Retention after 7 days): The p-value is 0.0016, which is well below 0.05, indicating a statistically significant difference in retention rates after 7 days, with Gate 30 showing better long-term retention.
 
 
 #### Summary Statement
@@ -113,8 +112,13 @@ Chi-Squared Test (Retention after 7 days): The p-value is 0.0016, which is well 
 
 **Recommendation**
 Given that the retention rates after 7 days show a statistically significant improvement for Gate 30, this should be the preferred option, even though the retention after 1 day and the number of game rounds played are not significantly different. Long-term player engagement is typically more valuable, making Gate 30 a better choice for maximizing retention.
-Action: Leave Gate 30 as the first gate as it shows stronger long-term player retention, which is likely to yield more sustained engagement over time.
 
 
+**Action** 
+Leave Gate 30 as the first gate as it shows stronger long-term player retention, which is likely to yield more sustained engagement over time.
 
+
+Note: I attached a more detailed report to this repository, or you can check it [here](https://docs.google.com/document/d/1pL8tICQDnqSXg67VhRJv5e9x0mTI0DC45bvKwSCqGsY/edit?usp=sharing).
+
+Task Source: Kaggle
 
